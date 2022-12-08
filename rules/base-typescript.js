@@ -12,7 +12,6 @@ module.exports = {
     node: true,
   },
   rules: {
-    // 'no-undef': 'error',
     'generator-star-spacing': ['error', 'after'],
     'max-len': ['error', { code: 120, tabWidth: 2, ignoreUrls: true }],
     'comma-dangle': ['error', 'always-multiline'],
@@ -30,6 +29,7 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 'off',
     // already used via esling plugin, this ignores JSX usage...
     // https://github.com/typescript-eslint/typescript-eslint/issues/868
+    // thx https://github.com/edgar0011/earl-eslint-config
     '@typescript-eslint/no-unused-vars': 'error',
     'import/no-cycle': 'error',
     'import/named': 'warn',

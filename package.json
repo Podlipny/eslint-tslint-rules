@@ -2,16 +2,18 @@
   "name": "@podlipny/eslint-rules",
   "version": "1.0.0",
   "description": "ESLint and TSLint rules",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint ./ src",
     "lint:fix": "yarn lint --fix"
   },
   "keywords": [
     "javascript",
+    "typescript",
     "es",
     "eslint",
-    "typescript",
+    "tslint",
+    "prettier",
+    "rules",
     "jsx",
     "react"
   ],
@@ -24,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/Podlipny/eslint-tslint-rules/issues"
   },
-  "homepage": "https://github.com/Podlipny/eslint-tslint-rules#readme",
   "dependencies": {
     "@babel/eslint-plugin": "^7.19.1",
     "@typescript-eslint/eslint-plugin": "^5.46.0",

@@ -29,18 +29,15 @@ module.exports = {
     HTMLInputElement: true,
   },
   rules: {
-    'arrow-parens': ['error', 'always'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
-    'import/no-cycle': 'error',
-    'import-order-alphabetical/order': 'off',
-    'import/order': ['error', { 'newlines-between': 'always' }],
-    'import/prefer-default-export': 'off',
     'no-shadow': 'off',
     'no-unused-expressions': 'off',
     'no-unused-vars': 'error',
     'no-constant-condition': 'off',
     'no-useless-constructor': 'warn',
     'no-multi-spaces': 'error',
+    'max-len': ['error', { code: 120, tabWidth: 2, ignoreUrls: true }],
+    'arrow-parens': ['error', 'always'],
+    'implicit-arrow-linebreak': ['error', 'beside'],
     'comma-dangle': [
       'error',
       'always-multiline',
@@ -53,7 +50,6 @@ module.exports = {
       'error',
       'prefer-single',
     ],
-    'max-len': ['error', { code: 120, tabWidth: 2, ignoreUrls: true }],
     'object-curly-spacing': [
       'error',
       'always',
@@ -94,6 +90,11 @@ module.exports = {
     ],
     'react/jsx-wrap-multilines': ['error', { prop: 'parens-new-line' }],
     'object-curly-newline': 'off',
+    // imports
+    'import/no-cycle': 'error',
+    'import-order-alphabetical/order': 'off',
+    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {
