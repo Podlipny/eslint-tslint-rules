@@ -1,6 +1,7 @@
 {
   "name": "@podlipny/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "private": false,
   "description": "ESLint and TSLint rules",
   "scripts": {
     "lint": "eslint src",
