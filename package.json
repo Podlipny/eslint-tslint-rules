@@ -1,6 +1,6 @@
 {
   "name": "@podlipny/eslint-rules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint and TSLint rules",
   "scripts": {
     "lint": "eslint src",
