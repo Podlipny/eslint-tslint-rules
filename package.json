@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "ESLint and TSLint rules",
   "scripts": {
-    "lint": "eslint ./ src",
+    "lint": "eslint src",
     "lint:fix": "yarn lint --fix"
   },
   "keywords": [
@@ -25,6 +25,12 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Podlipny/eslint-tslint-rules/issues"
+  },
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-plugin": "^7.19.1",
+    "eslint": "^8.29.0",
+    "eslint-import-resolver-babel-module": "^5.3.1"
   },
   "dependencies": {
     "@babel/eslint-plugin": "^7.19.1",
