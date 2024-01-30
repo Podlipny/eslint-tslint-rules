@@ -12,6 +12,7 @@ module.exports = {
     'react-hooks',
     'promise',
     'import',
+    'jsx-a11y',
   ],
   env: {
     browser: true,
@@ -29,15 +30,18 @@ module.exports = {
     HTMLInputElement: true,
   },
   rules: {
+    'arrow-parens': ['error', 'always'],
+    'implicit-arrow-linebreak': ['error', 'beside'],
+    'import/no-cycle': 'error',
+    'import-order-alphabetical/order': 'off',
+    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/prefer-default-export': 'off',
     'no-shadow': 'off',
     'no-unused-expressions': 'off',
     'no-unused-vars': 'error',
     'no-constant-condition': 'off',
     'no-useless-constructor': 'warn',
     'no-multi-spaces': 'error',
-    'max-len': ['error', { code: 120, tabWidth: 2, ignoreUrls: true }],
-    'arrow-parens': ['error', 'always'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
     'comma-dangle': [
       'error',
       'always-multiline',
@@ -50,6 +54,7 @@ module.exports = {
       'error',
       'prefer-single',
     ],
+    'max-len': ['error', { code: 120, tabWidth: 2, ignoreUrls: true }],
     'object-curly-spacing': [
       'error',
       'always',
@@ -88,13 +93,15 @@ module.exports = {
         allowBind: false,
       },
     ],
-    'react/jsx-wrap-multilines': ['error', { prop: 'parens-new-line' }],
+    "react/jsx-wrap-multilines": ["error", {
+      return: "parens-new-line",
+      declaration: "parens-new-line",
+      arrow: "parens-new-line",
+      condition: "parens-new-line",
+      logical: "parens-new-line",
+      prop: "parens-new-line",
+    }],
     'object-curly-newline': 'off',
-    // imports
-    'import/no-cycle': 'error',
-    'import-order-alphabetical/order': 'off',
-    'import/order': ['error', { 'newlines-between': 'always' }],
-    'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {
