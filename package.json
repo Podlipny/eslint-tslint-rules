@@ -1,11 +1,12 @@
 {
   "name": "@podlipny/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "private": false,
   "description": "ESLint and TSLint rules",
   "scripts": {
     "lint": "eslint src",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "publish:patch": "npm version patch && npm publish"
   },
   "keywords": [
     "javascript",
